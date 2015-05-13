@@ -29,7 +29,7 @@ public class BookendsSample extends ActionBarActivity {
 
 		// Make Bookends
 		SampleAdapter sampleAdapter = new SampleAdapter();
-		mBookends = new Bookends<>(sampleAdapter, getBaseContext());
+		mBookends = new Bookends<>(sampleAdapter);
 
 		// Inflate header and footer views
 		LayoutInflater inflater = LayoutInflater.from(getBaseContext());

@@ -26,7 +26,7 @@ View anotherHeader = LayoutInflater.from(getContext()).inflate(R.layout.another_
 View myFooter = LayoutInflater.from(getContext()).inflate(R.layout.my_footer, null);
 
 // Add them as headers / footers
-Bookends<MyAdapter> adapter = new Bookends<MyAdapter>(myAdapter, getContext());
+Bookends<MyAdapter> adapter = new Bookends<MyAdapter>(myAdapter);
 adapter.addHeader(myHeader);
 adapter.addHeader(anotherHeader);
 adapter.addFooter(myFooter);

@@ -1,6 +1,5 @@
 package com.tumblr.bookends;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -29,8 +28,6 @@ public class Bookends<T extends RecyclerView.Adapter> extends RecyclerView.Adapt
 
 	private final T mBase;
 
-	private final Context mContext;
-
 	/**
 	 * Defines available view type integers for headers and footers.
 	 *
@@ -53,13 +50,10 @@ public class Bookends<T extends RecyclerView.Adapter> extends RecyclerView.Adapt
 	 *
 	 * @param base
 	 * 		the adapter to wrap
-	 * @param context
-	 * 		the context to use
 	 */
-	public Bookends(T base, Context context) {
+	public Bookends(T base) {
 		super();
 		mBase = base;
-		mContext = context;
 	}
 
 	/**
