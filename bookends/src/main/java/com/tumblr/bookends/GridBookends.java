@@ -30,17 +30,17 @@ public class GridBookends extends Bookends {
 	 *
 	 * @param base
 	 *      the adapter to wrap
-	 * @param manager
+	 * @param gridLayoutManager
 	 *      the grid layout manager to perform a span size lookup on
 	 */
-	public GridBookends(final RecyclerView.Adapter base, @NonNull final GridLayoutManager manager) {
+	public GridBookends(final RecyclerView.Adapter base, @NonNull final GridLayoutManager gridLayoutManager) {
 		this(base);
 
-		manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+		gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
 			@Override
-			public int getSpanSize(int position ) {
+			public int getSpanSize(int position) {
 				return (position < getHeaderCount() || position >= getItemCount() - getFooterCount())
-						? manager.getSpanCount()
+						? gridLayoutManager.getSpanCount()
 						: 1;
 			}
 		});
@@ -51,14 +51,14 @@ public class GridBookends extends Bookends {
 	 *
 	 * @param base
 	 *      the adapter to wrap
-	 * @param manager
+	 * @param gridLayoutManager
 	 *      the grid layout manager to perform a span size lookup on
-	 * @param lookup
+	 * @param spanSizeLookup
 	 *      the span size lookup to perform
 	 */
-	public GridBookends(final RecyclerView.Adapter base, @NonNull final GridLayoutManager manager,
-	                    @NonNull GridLayoutManager.SpanSizeLookup lookup) {
+	public GridBookends(final RecyclerView.Adapter base, @NonNull final GridLayoutManager gridLayoutManager,
+	                    @NonNull GridLayoutManager.SpanSizeLookup spanSizeLookup) {
 		this(base);
-		manager.setSpanSizeLookup(lookup);
+		gridLayoutManager.setSpanSizeLookup(spanSizeLookup);
 	}
 }
