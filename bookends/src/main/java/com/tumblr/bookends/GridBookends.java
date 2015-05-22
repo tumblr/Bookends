@@ -7,11 +7,11 @@ import android.support.v7.widget.RecyclerView;
 /**
  * An implementation of {@link Bookends} that accounts for spans in a {@link GridLayoutManager} when
  * creating headers and footers.
- *
+ * <p/>
  * This class performs a {@link android.support.v7.widget.GridLayoutManager.SpanSizeLookup} using either
  * the span count returned by the {@link GridLayoutManager} or a custom implementation. By default
  * headers and footers will fill the span count of the {@link GridLayoutManager}.
- *
+ * <p/>
  * Created by kevincoughlin on 5/21/15.
  */
 public class GridBookends extends Bookends {
@@ -29,9 +29,9 @@ public class GridBookends extends Bookends {
 	 * Constructor.
 	 *
 	 * @param base
-	 *      the adapter to wrap
+	 * 		the adapter to wrap
 	 * @param gridLayoutManager
-	 *      the grid layout manager to perform a span size lookup on
+	 * 		the grid layout manager to perform a span size lookup on
 	 */
 	public GridBookends(final RecyclerView.Adapter base, @NonNull final GridLayoutManager gridLayoutManager) {
 		this(base);
@@ -49,11 +49,11 @@ public class GridBookends extends Bookends {
 	 * Constructor.
 	 *
 	 * @param base
-	 *      the adapter to wrap
+	 * 		the adapter to wrap
 	 * @param gridLayoutManager
-	 *      the grid layout manager to perform a span size lookup on
+	 * 		the grid layout manager to perform a span size lookup on
 	 * @param spanSizeLookup
-	 *      the span size lookup to perform
+	 * 		the span size lookup to perform
 	 */
 	public GridBookends(final RecyclerView.Adapter base, @NonNull final GridLayoutManager gridLayoutManager,
 	                    @NonNull GridLayoutManager.SpanSizeLookup spanSizeLookup) {
