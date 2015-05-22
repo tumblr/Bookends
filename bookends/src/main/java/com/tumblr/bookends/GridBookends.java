@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
  * the span count returned by the {@link GridLayoutManager} or a custom implementation. By default
  * headers and footers will fill the span count of the {@link GridLayoutManager}.
  * <p/>
+ * 
  * Created by kevincoughlin on 5/21/15.
  */
 public class GridBookends extends Bookends {
