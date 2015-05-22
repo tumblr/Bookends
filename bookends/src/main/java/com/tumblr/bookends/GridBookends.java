@@ -35,7 +35,6 @@ public class GridBookends extends Bookends {
 	 */
 	public GridBookends(final RecyclerView.Adapter base, @NonNull final GridLayoutManager gridLayoutManager) {
 		this(base);
-
 		gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
 			@Override
 			public int getSpanSize(int position) {
