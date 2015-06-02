@@ -2,6 +2,25 @@
 
 A UI widget that allows for headers and footers on lists backed by [RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html), for Android.
 
+## Download
+
+Grab the artifact via [Jitpack](https://jitpack.io/). Include Jitpack as a repository in your build.gradle file:
+
+```
+repositories {
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+```
+
+And add Bookends to your dependencies:
+
+```
+dependencies {
+    compile 'com.github.tumblr:Bookends:v1.0'
+}
+```
 
 ## Usage
 
