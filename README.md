@@ -4,13 +4,11 @@ A UI widget that allows for headers and footers on lists backed by [RecyclerView
 
 ## Download
 
-Grab the artifact via [Jitpack](https://jitpack.io/). Include Jitpack as a repository in your build.gradle file:
+Grab the artifact via JCenter. Include JCenter as a repository in your build.gradle file:
 
 ```
 repositories {
-    maven {
-        url 'https://jitpack.io'
-    }
+    jcenter()
 }
 ```
 
@@ -18,7 +16,7 @@ And add Bookends to your dependencies:
 
 ```
 dependencies {
-    compile 'com.github.tumblr:Bookends:v1.0'
+    compile (group: 'com.tumblr', name: 'bookends', version: '1.0.0', ext: 'aar')
 }
 ```
 
@@ -56,7 +54,7 @@ Clone and build this repo in Android Studio to see an example of a sample app. T
 
 ## Contact
 
-Michael Lapadula: mlapadula@tumblr.com
+Michael Lapadula: mlapadula@gmail.com
 
 ## License
 
